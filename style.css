@@ -1,0 +1,80 @@
+@font-face {
+  font-family: Onest Regular;
+  src: url(/fonts/OnestRegular1602-hint.ttf);
+}
+
+body {
+  width: 1440px;
+  margin: auto;
+}
+#banner {
+  height: 90px;
+  background-image: url(/img/background.svg);
+}
+
+.btn-sm {
+  font-size: 14px;
+  width: 160px;
+  height: 29px;
+  margin-top: 31px;
+}
+
+.text {
+  margin-top: 15px;
+}
+
+.right-text-col {
+  margin-top: 16px;
+  margin-left: 34.11px;
+}
+.bold-text {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20.8px;
+  font-family: "Onest Regular";
+}
+
+.hook-text {
+  color: #136ef6;
+}
+
+.left-text {
+  margin-top: 5px;
+}
+
+.right-text {
+  margin-bottom: 2px;
+}
+.normal-text {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 16.9px;
+  font-family: "Onest Regular";
+}
+
+button {
+  color: white;
+  border: none;
+  font-family: "Onest Regular";
+  font-weight: 700;
+  background: #136ef6;
+  border-radius: 5px;
+}
+
+.backpack {
+  margin-top: 15.77px;
+  margin-left: 64.13px;
+}
+
+.arrows-1 {
+  margin-top: 23.94px;
+}
+
+.arrows-2 {
+  margin-top: 43.18px;
+}
+
+.computer {
+  margin-top: 36.63px;
+  margin-right: 73.97px;
+}
