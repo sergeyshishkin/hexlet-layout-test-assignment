@@ -12,6 +12,13 @@ body {
   background-image: url(/img/background.svg);
 }
 
+.col-1 {
+  padding: 0;
+}
+
+#btn {
+  margin-left: 23px;
+}
 .btn-sm {
   font-size: 14px;
   width: 160px;
@@ -19,8 +26,12 @@ body {
   margin-top: 31px;
 }
 
+#arrows2-col {
+  padding-left: 20px;
+}
 .text {
   margin-top: 15px;
+  padding: 0;
 }
 
 .right-text-col {
