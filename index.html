@@ -25,6 +25,13 @@
     <title>Hello, world!</title>
   </head>
   <body>
+    <!-- Modal window -->
+    <div class="modal" tabindex="-1" id="myModal">
+      <div class="modal-dialog"></div>
+      <!-- Add here modal window html markup -->
+    </div>
+
+    <!-- Banner-->
     <div class="container-fluid" id="banner">
       <div class="row">
         <div class="col-4">
@@ -69,11 +76,118 @@
         <div class="col-3">
           <div class="row">
             <div class="col btn-col">
-              <button class="btn-sm" id="bannerbtn">А что подарите?</button>
+              <button
+                class="btn-sm"
+                id="bannerbtn"
+                data-bs-toggle="modal"
+                data-bs-target="#myModal"
+              >
+                А что подарите?
+              </button>
             </div>
             <div class="col computer-icon-col">
               <img class="computer" src="/img/computer 1.svg" alt="" />
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Temp modal window html markup -->
+    <div class="modal-content">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="col">
+            <div class="row">
+              <div class="col">
+                <h5>Хочу стать разработчиком!</h5>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <p>И получить один из трех подарков</p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-2">
+                <img class="revenue-icon" src="/img/revenue 1 1.svg" alt="" />
+              </div>
+              <div class="col">
+                <p>
+                  Именной депозит на 20к. Будет доступен после покупки
+                  профессии, им можно оплачивать дальнейшее обучение в Хекслете
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-2">
+                <img class="chat-icon" src="/img/online-chat 1.svg" alt="" />
+              </div>
+              <div class="col">
+                <p>
+                  Консультация с карьерным экспертом в IT. Прояснит вопросы
+                  будущего трудоустройства: от поиска первой работы до развития
+                  карьеры
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-2">
+                <img class="note-icon" src="/img/notes 1.svg" alt="" />
+              </div>
+              <div class="col">
+                <p>
+                  Возможность заморозить обучение на 2 месяца. Перерыв, если
+                  нужно будет восстановить силы и не учиться
+                </p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <p class="asterisk-text">
+                  *Подарок определит сотрудник Хекслета после беседы. Мы
+                  уточним<br />
+                  ваши намерения, поможем с выбором, а если поймем, что
+                  программирование –<br />
+                  это не ваше, честно отговорим от обучения
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="inputs-block">
+              <input type="text" class="form-control" id="input-name" />
+              <input type="email" class="form-control" id="input-email" />
+              <input type="tel" class="form-control" id="input-phone" />
+              <input list="browsers" class="form-control" id="input-faculty" />
+              <datalist id="browsers">
+                <option value="Chrome"></option>
+                <option value="Firefox"></option>
+                <option value="Internet Explorer"></option>
+                <option value="Opera"></option>
+                <option value="Safari"></option>
+                <option value="Microsoft Edge"></option>
+              </datalist>
+              <button id="modalbtn" class="form-control">Жду звонка</button>
+              <p class="legal-text">
+                Даю согласие на обработку персональных данных, соглашаюсь с
+                «Политикой конфиденциальности» и «Условиями оказания услуг»
+              </p>
+            </div>
+          </div>
+          <div class="col-1">
+            <img class="modal-arrow" src="/img/modal-arrow.svg" alt="" />
           </div>
         </div>
       </div>
