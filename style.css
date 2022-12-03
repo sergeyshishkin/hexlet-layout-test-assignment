@@ -1,3 +1,5 @@
+/* General styles */
+
 @font-face {
   font-family: Onest Regular;
   src: url(/fonts/OnestRegular1602-hint.ttf);
@@ -12,32 +14,47 @@ body {
   background-image: url(/img/background.svg);
 }
 
+/* Column styles */
+
 .col-1 {
   padding: 0;
 }
 
-#btn {
-  margin-left: 23px;
-}
-.btn-sm {
-  font-size: 14px;
-  width: 160px;
-  height: 29px;
-  margin-top: 31px;
+.btn-col {
+  margin-left: 14px;
+  padding: 0px;
 }
 
 #arrows2-col {
-  padding-left: 20px;
+  padding-left: 12px;
 }
-.text {
+
+.computer-icon-col {
+  padding-right: 0px;
+  padding-left: 65px;
+}
+
+/* Text styles */
+
+.left-text-col {
   margin-top: 15px;
-  padding: 0;
+  padding: 0px;
 }
 
 .right-text-col {
   margin-top: 16px;
   margin-left: 34.11px;
+  padding-left: 27px;
+  padding-right: 0px;
 }
+
+.normal-text {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 16.9px;
+  font-family: "Onest Regular";
+}
+
 .bold-text {
   font-size: 16px;
   font-weight: 700;
@@ -56,12 +73,29 @@ body {
 .right-text {
   margin-bottom: 2px;
 }
-.normal-text {
-  font-size: 13px;
-  font-weight: 500;
-  line-height: 16.9px;
-  font-family: "Onest Regular";
+
+/* Images styles */
+
+.backpack {
+  margin-top: 8.77px;
+  margin-left: 67px;
 }
+
+.arrows-1 {
+  margin-top: 23.94px;
+  padding-left: 7px;
+}
+
+.arrows-2 {
+  margin-top: 43px;
+}
+
+.computer {
+  margin-top: 36.63px;
+  margin-right: 73.97px;
+}
+
+/* Button styles */
 
 button {
   color: white;
@@ -72,20 +106,9 @@ button {
   border-radius: 5px;
 }
 
-.backpack {
-  margin-top: 15.77px;
-  margin-left: 64.13px;
-}
-
-.arrows-1 {
-  margin-top: 23.94px;
-}
-
-.arrows-2 {
-  margin-top: 43.18px;
-}
-
-.computer {
-  margin-top: 36.63px;
-  margin-right: 73.97px;
+.btn-sm {
+  font-size: 14px;
+  width: 160px;
+  height: 29px;
+  margin-top: 31px;
 }
