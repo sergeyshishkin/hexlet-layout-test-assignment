@@ -3,6 +3,8 @@
 @font-face {
   font-family: Onest Regular;
   src: url(/fonts/OnestRegular1602-hint.ttf);
+  font-family: Onest Bold;
+  src: url(/fonts/OnestBold1602-hint.ttf);
 }
 
 body {
@@ -74,19 +76,6 @@ body {
   margin-bottom: 2px;
 }
 
-.asterisk-text {
-  font-family: "Onest Regular";
-  font-size: 12px;
-  font-weight: 300;
-  line-height: 15.6px;
-}
-
-.legal-text {
-  font-family: "Onest Regular";
-  font-size: 10px;
-  font-weight: 400;
-  line-height: 13px;
-}
 /* Images styles */
 
 .backpack {
@@ -110,8 +99,7 @@ body {
 
 /* Button styles */
 
-button,
-#modalbtn {
+button {
   color: white;
   border: none;
   font-family: "Onest Regular";
@@ -127,14 +115,108 @@ button,
   margin-top: 31px;
 }
 
-#modalbtn {
-  height: 44px;
-}
-
 /* Modal */
 .modal-content {
-  margin-top: 50px;
+  margin-top: 50px; /* SHOULD BE REMOVED*/
   width: 930px;
   height: 440px;
   background-image: url(/img/background-modal.svg);
+}
+
+.modal-header {
+  border: none;
+}
+
+#modal-title {
+  font-family: "Onest Bold";
+  font-size: 34px;
+  font-weight: 900;
+  line-height: 44.2px;
+  color: #136ef6;
+  margin-left: 55px;
+  margin-bottom: 15px;
+}
+
+.left-block {
+  margin: 0px;
+  padding: 0px;
+}
+
+.right-block {
+  margin-top: 18px;
+}
+
+.asterisk-text {
+  font-family: "Onest Regular";
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 15.6px;
+  margin-left: 55px;
+}
+
+.legal-text {
+  font-family: "Onest Regular";
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 13px;
+}
+
+#text-get-gifts {
+  font-family: "Onest Regular";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23.4px;
+  margin-left: 55px;
+}
+
+.modal-point-text {
+  font-family: "Onest Regular";
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 19.5px;
+}
+
+.gifts-texts {
+  font-family: "Onest Regular";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 19.5px;
+  margin-bottom: 10px;
+}
+
+#last-item {
+  margin-bottom: 15px;
+}
+
+.icon-col {
+  margin-left: 66px;
+}
+
+.input-col {
+  width: 260px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+input {
+  width: 200px;
+  height: 17px;
+}
+#modalbtn {
+  color: white;
+  border: none;
+  font-family: "Onest Bold";
+  font-weight: 700;
+  background: #136ef6;
+  border-radius: 5px;
+  height: 44px;
+  margin-bottom: 7px;
+}
+
+a {
+  color: #212529;
+}
+
+#modal-arrow {
+  margin-top: 189px;
 }
