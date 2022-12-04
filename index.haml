@@ -1,0 +1,135 @@
+!!!
+%html(lang="en")
+  %head
+    %meta(content="text/html; charset=UTF-8" http-equiv="Content-Type")/
+    / Required meta tags
+    %meta(charset="utf-8")/
+    %meta(content="width=device-width, initial-scale=1" name="viewport")/
+    / Bootstrap CSS
+    %link(crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" rel="stylesheet")/
+    %link(crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" referrerpolicy="no-referrer" rel="stylesheet")/
+    %link(href="style.css" rel="stylesheet")/
+    %title Hello, world!
+  %body
+    / Modal window
+    #myModal.modal(tabindex="-1")
+      .modal-dialog
+      / Add here modal window html markup
+      .modal-content
+        .container-fluid
+          .row
+            .modal-header
+              %button.btn-close(aria-label="Close" data-bs-dismiss="modal" type="button")
+            .col.left-block
+              .row
+                .col
+                  %p#modal-title Хочу стать разработчиком!
+              .row
+                .col
+                  %p#text-get-gifts И получить один из трех подарков
+              .row
+                .col-1.icon-col
+                  %img.revenue-icon(alt="" src="/img/revenue 1 1.svg")/
+                .col
+                  %p.gifts-texts
+                    %span.modal-point-text Именной депозит на 20к.
+                    Будет доступен после покупки профессии, им можно оплачивать
+                    дальнейшее обучение
+                    %br/
+                    в Хекслете
+              .row
+                .col-1.icon-col
+                  %img.chat-icon(alt="" src="/img/online-chat 1.svg")/
+                .col
+                  %p.gifts-texts
+                    %span.modal-point-text Консультация с карьерным экспертом в IT.
+                    %br/
+                    Прояснит вопросы будущего трудоустройства: от поиска
+                    %br/
+                    первой работы до развития карьеры
+              .row
+                .col-1.icon-col
+                  %img.note-icon(alt="" src="/img/notes 1.svg")/
+                .col
+                  %p#last-item.gifts-texts
+                    %span.modal-point-text Возможность заморозить обучение на 2 месяца.
+                    %br/
+                    Перерыв, если нужно будет восстановить силы
+                    %br/
+                    и не учиться
+              .row
+                .col
+                  %p.asterisk-text
+                    *Подарок определит сотрудник Хекслета после беседы. Мы
+                    уточним ваши
+                    %br/
+                    намерения, поможем с выбором, а если поймем, что
+                    программирование –
+                    %br/
+                    это не ваше, честно отговорим от обучения
+            .col-4.right-block
+              %input#input-name.form-control(placeholder="Имя" type="text")/
+              .form-floating
+                %input#input-email.form-control(type="email")/
+                %label(for="input-email") Электронная почта
+              %input#input-phone.form-control(placeholder="Номер телефона" type="tel")/
+              %select#input-faculty.form-select(placeholder="!!!!")
+                %option#faculty-placeholder(selected="Chrome")
+                  Хочу на факультет
+                %option(value="Chrome") Chrome
+                %option(value="Firefox") Firefox
+                %option(value="Internet Explorer") Internet Explorer
+                %option(value="Opera") Opera
+                %option(value="Safari") Safari
+                %option(value="Microsoft Edge") Microsoft Edge
+              %button#modalbtn.form-control Жду звонка
+              %p.legal-text
+                Даю согласие на обработку персональных данных, соглашаюсь с
+                %a(href="#") «Политикой конфиденциальности»
+                и
+                %a(href="#") «Условиями оказания услуг»
+            .col-1.arrow-col
+              %img#modal-arrow(alt="" src="/img/modal-arrow.svg")/
+    / Banner
+    #banner.container-fluid
+      .row
+        .col-4
+          .row
+            .col-4
+              %img.backpack(alt="" src="/img/School_Bag.svg")/
+            .col.left-text-col
+              .bold-text
+                Мы знаем, как закончить
+                %br/
+                школу за
+                %span.hook-text 10 месяцев!
+              .normal-text.left-text
+                А потом устроиться на любимую работу
+            .col-1
+              %img.arrows-1(alt="" src="/img/arrows-04 1.svg")/
+        .col-5
+          .row
+            .col.right-text-col
+              .normal-text.right-text
+                Хотите также? Приходите учиться в Хекслет!
+              .bold-text
+                %span.hook-text До 1 сентября
+                оставьте заявку на
+                любую профессию,
+                %br/
+                а мы подарим классные
+                %span.hook-text бонусы
+                для
+                воодушевляющего старта
+            #arrows2-col.col-1
+              %img.arrows-2(alt="" src="/img/arrows-04 2.svg")/
+        .col-3
+          .row
+            .col.btn-col
+              %button#bannerbtn.btn-sm(data-bs-target="#myModal" data-bs-toggle="modal")
+                А что подарите?
+            .col.computer-icon-col
+              %img.computer(alt="" src="/img/computer 1.svg")/
+    / Option 1: Bootstrap Bundle with Popper
+    %script(crossorigin="anonymous" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js")
+    %script(src="/script.js")
