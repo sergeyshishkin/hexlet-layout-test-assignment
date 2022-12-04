@@ -29,6 +29,131 @@
     <div class="modal" tabindex="-1" id="myModal">
       <div class="modal-dialog"></div>
       <!-- Add here modal window html markup -->
+      <div class="modal-content">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="modal-header">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="col left-block">
+              <div class="row">
+                <div class="col">
+                  <p id="modal-title">Хочу стать разработчиком!</p>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col">
+                  <p id="text-get-gifts">И получить один из трех подарков</p>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-1 icon-col">
+                  <img class="revenue-icon" src="/img/revenue 1 1.svg" alt="" />
+                </div>
+                <div class="col">
+                  <p class="gifts-texts">
+                    <span class="modal-point-text"
+                      >Именной депозит на 20к.</span
+                    >
+                    Будет доступен после покупки профессии, им можно оплачивать
+                    дальнейшее обучение<br />
+                    в Хекслете
+                  </p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-1 icon-col">
+                  <img class="chat-icon" src="/img/online-chat 1.svg" alt="" />
+                </div>
+                <div class="col">
+                  <p class="gifts-texts">
+                    <span class="modal-point-text"
+                      >Консультация с карьерным экспертом в IT.</span
+                    ><br />
+                    Прояснит вопросы будущего трудоустройства: от поиска<br />
+                    первой работы до развития карьеры
+                  </p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-1 icon-col">
+                  <img class="note-icon" src="/img/notes 1.svg" alt="" />
+                </div>
+                <div class="col">
+                  <p class="gifts-texts" id="last-item">
+                    <span class="modal-point-text"
+                      >Возможность заморозить обучение на 2 месяца.</span
+                    ><br />
+                    Перерыв, если нужно будет восстановить силы<br />
+                    и не учиться
+                  </p>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col">
+                  <p class="asterisk-text">
+                    *Подарок определит сотрудник Хекслета после беседы. Мы
+                    уточним ваши<br />
+                    намерения, поможем с выбором, а если поймем, что
+                    программирование –<br />
+                    это не ваше, честно отговорим от обучения
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-4 right-block">
+              <input
+                type="text"
+                class="form-control"
+                id="input-name"
+                placeholder="Имя"
+              />
+
+              <div class="form-floating">
+                <input type="email" class="form-control" id="input-email" />
+                <label for="input-email">Электронная почта</label>
+              </div>
+              <input
+                type="tel"
+                class="form-control"
+                id="input-phone"
+                placeholder="Номер телефона"
+              />
+
+              <select class="form-select" id="input-faculty" placeholder="!!!!">
+                <option selected="Chrome" id="faculty-placeholder">
+                  Хочу на факультет
+                </option>
+                <option value="Chrome">Chrome</option>
+                <option value="Firefox">Firefox</option>
+                <option value="Internet Explorer">Internet Explorer</option>
+                <option value="Opera">Opera</option>
+                <option value="Safari">Safari</option>
+                <option value="Microsoft Edge">Microsoft Edge</option>
+              </select>
+
+              <button id="modalbtn" class="form-control">Жду звонка</button>
+
+              <p class="legal-text">
+                Даю согласие на обработку персональных данных, соглашаюсь с
+                <a href="#">«Политикой конфиденциальности»</a> и
+                <a href="#">«Условиями оказания услуг»</a>
+              </p>
+            </div>
+            <div class="col-1 arrow-col">
+              <img id="modal-arrow" src="/img/modal-arrow.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Banner-->
@@ -88,156 +213,6 @@
             <div class="col computer-icon-col">
               <img class="computer" src="/img/computer 1.svg" alt="" />
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Temp modal window html markup -->
-    <div class="modal-content">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="modal-header">
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="col left-block">
-            <div class="row">
-              <div class="col">
-                <p id="modal-title">Хочу стать разработчиком!</p>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col">
-                <p id="text-get-gifts">И получить один из трех подарков</p>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-1 icon-col">
-                <img class="revenue-icon" src="/img/revenue 1 1.svg" alt="" />
-              </div>
-              <div class="col">
-                <p class="gifts-texts">
-                  <span class="modal-point-text">Именной депозит на 20к.</span>
-                  Будет доступен после покупки профессии, им можно оплачивать
-                  дальнейшее обучение<br />
-                  в Хекслете
-                </p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-1 icon-col">
-                <img class="chat-icon" src="/img/online-chat 1.svg" alt="" />
-              </div>
-              <div class="col">
-                <p class="gifts-texts">
-                  <span class="modal-point-text"
-                    >Консультация с карьерным экспертом в IT.</span
-                  ><br />
-                  Прояснит вопросы будущего трудоустройства: от поиска<br />
-                  первой работы до развития карьеры
-                </p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-1 icon-col">
-                <img class="note-icon" src="/img/notes 1.svg" alt="" />
-              </div>
-              <div class="col">
-                <p class="gifts-texts" id="last-item">
-                  <span class="modal-point-text"
-                    >Возможность заморозить обучение на 2 месяца.</span
-                  ><br />
-                  Перерыв, если нужно будет восстановить силы<br />
-                  и не учиться
-                </p>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col">
-                <p class="asterisk-text">
-                  *Подарок определит сотрудник Хекслета после беседы. Мы уточним
-                  ваши<br />
-                  намерения, поможем с выбором, а если поймем, что
-                  программирование –<br />
-                  это не ваше, честно отговорим от обучения
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-4 right-block">
-            <div class="row">
-              <div class="col input-col">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="input-name"
-                  placeholder="Имя"
-                />
-              </div>
-            </div>
-            <div class="row">
-              <div class="col input-col form-floating">
-                <input
-                  type="email"
-                  class="form-control"
-                  id="input-email"
-                  placeholder="example@gmail.com"
-                />
-                <label for="input-email">Электронная почта</label>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col input-col">
-                <input
-                  type="tel"
-                  class="form-control"
-                  id="input-phone"
-                  placeholder="Номер телефона"
-                />
-              </div>
-            </div>
-            <div class="row">
-              <div class="col input-col">
-                <select
-                  class="form-select"
-                  id="input-faculty"
-                  placeholder="Хочу на факультет"
-                >
-                  <option value="Chrome">Chrome</option>
-                  <option value="Firefox">Firefox</option>
-                  <option value="Internet Explorer">Internet Explorer</option>
-                  <option value="Opera">Opera</option>
-                  <option value="Safari">Safari</option>
-                  <option value="Microsoft Edge">Microsoft Edge</option>
-                </select>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col">
-                <button id="modalbtn" class="form-control">Жду звонка</button>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col">
-                <p class="legal-text">
-                  Даю согласие на обработку персональных данных, соглашаюсь с
-                  <a href="#">«Политикой конфиденциальности»</a> и
-                  <a href="#">«Условиями оказания услуг»</a>
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-1">
-            <img id="modal-arrow" src="/img/modal-arrow.svg" alt="" />
           </div>
         </div>
       </div>

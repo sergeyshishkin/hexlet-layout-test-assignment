@@ -3,7 +3,7 @@
 @font-face {
   font-family: Onest Regular;
   src: url(/fonts/OnestRegular1602-hint.ttf);
-  font-family: Onest Bold;
+  font-family: Onest-Bold;
   src: url(/fonts/OnestBold1602-hint.ttf);
 }
 
@@ -116,8 +116,9 @@ button {
 }
 
 /* Modal */
+
 .modal-content {
-  margin-top: 50px; /* SHOULD BE REMOVED*/
+  margin: auto;
   width: 930px;
   height: 440px;
   background-image: url(/img/background-modal.svg);
@@ -128,7 +129,7 @@ button {
 }
 
 #modal-title {
-  font-family: "Onest Bold";
+  font-family: "Onest-Bold";
   font-size: 34px;
   font-weight: 900;
   line-height: 44.2px;
@@ -144,6 +145,8 @@ button {
 
 .right-block {
   margin-top: 18px;
+  padding-left: 34px;
+  padding-right: 18px;
 }
 
 .asterisk-text {
@@ -192,20 +195,18 @@ button {
   margin-left: 66px;
 }
 
-.input-col {
-  width: 260px;
-  height: 50px;
+.form-col {
   margin-bottom: 10px;
+  margin-left: 0px;
+  padding: 0px;
 }
 
-input {
-  width: 200px;
-  height: 17px;
-}
 #modalbtn {
+  font-size: 18px;
+  line-height: 23.4px;
   color: white;
   border: none;
-  font-family: "Onest Bold";
+  font-family: "Onest-Bold";
   font-weight: 700;
   background: #136ef6;
   border-radius: 5px;
@@ -218,5 +219,18 @@ a {
 }
 
 #modal-arrow {
-  margin-top: 189px;
+  margin-top: 200px;
+}
+
+input,
+select {
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.form-control,
+.form-select {
+  border-width: 0.5px;
+  border-color: #136ef6;
+  border-style: solid;
 }
