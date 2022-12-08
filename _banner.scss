@@ -1,0 +1,96 @@
+.banner {
+  height: 90px;
+  background-image: url(/img/background.svg);
+}
+
+// Banner text styles
+.normal-text {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 16.9px;
+  font-family: $normal-font;
+}
+
+.bold-text {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20.8px;
+  font-family: $normal-font;
+}
+
+.hook-text {
+  color: $emphasis-color;
+}
+
+// Banner left-block
+.left-block {
+  .backpack-col {
+    img {
+      margin-top: 8.77px;
+      margin-left: 67px;
+    }
+  }
+
+  .left-text-col {
+    margin-top: 15px;
+    padding: 0px;
+  }
+
+  .left-text {
+    margin-top: 5px;
+  }
+
+  .arrows1-col {
+    padding: 0;
+
+    img {
+      margin-top: 23.94px;
+      padding-left: 7px;
+    }
+  }
+}
+
+// Banner center-block--text
+.right-text-col {
+  margin-top: 16px;
+  margin-left: 34.11px;
+  padding-right: 0px;
+
+  .right-text {
+    margin-bottom: 2px;
+  }
+}
+
+// Banner center-block--icon
+.arrows2-col {
+  padding-left: 12px;
+
+  img {
+    margin-top: 43px;
+  }
+}
+
+// Banner right-block
+.btn-col {
+  margin-left: 14px;
+  padding: 0px;
+
+  button {
+    font-size: 14px;
+    width: 160px;
+    height: 29px;
+    margin-top: 31px;
+
+    @extend %button-style;
+  }
+}
+
+.computer-icon {
+  padding-right: 0px;
+  padding-left: 65px;
+
+  img {
+    margin-top: 36.63px;
+    margin-right: 73.97px;
+  }
+}

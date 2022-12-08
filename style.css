@@ -1,121 +1,104 @@
-/* General styles */
-
 @font-face {
-  font-family: Onest Regular;
-  src: url(/fonts/OnestRegular1602-hint.ttf);
-  font-family: Onest-Bold;
-  src: url(/fonts/OnestBold1602-hint.ttf);
+  font-family: "Onest Bold";
+  src: url(/fonts/OnestBold1602-hint.woff) format("woff");
+  font-family: "Onest Medium";
+  src: url(/fonts/OnestMedium1602-hint.ttf) format("ttf");
+  font-family: "Onest Light";
+  src: url(/fonts/OnestLight1602-hint.ttf) format("ttf");
+  font-family: "Onest Regular";
+  src: url(/fonts/OnestRegular1602-hint.ttf) format("ttf");
+}
+#modalbtn, .btn-col button {
+  color: white;
+  border: none;
+  font-family: "Onest Medium";
+  font-weight: 700;
+  background: #136ef6;
+  border-radius: 5px;
 }
 
 body {
   width: 1440px;
   margin: auto;
 }
-#banner {
+
+.banner {
   height: 90px;
   background-image: url(/img/background.svg);
-}
-
-/* Column styles */
-
-.col-1 {
-  padding: 0;
-}
-
-.btn-col {
-  margin-left: 14px;
-  padding: 0px;
-}
-
-#arrows2-col {
-  padding-left: 12px;
-}
-
-.computer-icon-col {
-  padding-right: 0px;
-  padding-left: 65px;
-}
-
-/* Text styles */
-
-.left-text-col {
-  margin-top: 15px;
-  padding: 0px;
-}
-
-.right-text-col {
-  margin-top: 16px;
-  margin-left: 34.11px;
-  padding-left: 27px;
-  padding-right: 0px;
 }
 
 .normal-text {
   font-size: 13px;
   font-weight: 500;
   line-height: 16.9px;
-  font-family: "Onest Regular";
+  font-family: "Onest Medium";
 }
 
 .bold-text {
   font-size: 16px;
   font-weight: 700;
   line-height: 20.8px;
-  font-family: "Onest Regular";
+  font-family: "Onest Medium";
 }
 
 .hook-text {
   color: #136ef6;
 }
 
-.left-text {
-  margin-top: 5px;
-}
-
-.right-text {
-  margin-bottom: 2px;
-}
-
-/* Images styles */
-
-.backpack {
+.left-block .backpack-col img {
   margin-top: 8.77px;
   margin-left: 67px;
 }
-
-.arrows-1 {
+.left-block .left-text-col {
+  margin-top: 15px;
+  padding: 0px;
+}
+.left-block .left-text {
+  margin-top: 5px;
+}
+.left-block .arrows1-col {
+  padding: 0;
+}
+.left-block .arrows1-col img {
   margin-top: 23.94px;
   padding-left: 7px;
 }
 
-.arrows-2 {
+.right-text-col {
+  margin-top: 16px;
+  margin-left: 34.11px;
+  padding-right: 0px;
+}
+.right-text-col .right-text {
+  margin-bottom: 2px;
+}
+
+.arrows2-col {
+  padding-left: 12px;
+}
+.arrows2-col img {
   margin-top: 43px;
 }
 
-.computer {
-  margin-top: 36.63px;
-  margin-right: 73.97px;
+.btn-col {
+  margin-left: 14px;
+  padding: 0px;
 }
-
-/* Button styles */
-
-button {
-  color: white;
-  border: none;
-  font-family: "Onest Regular";
-  font-weight: 700;
-  background: #136ef6;
-  border-radius: 5px;
-}
-
-.btn-sm {
+.btn-col button {
   font-size: 14px;
   width: 160px;
   height: 29px;
   margin-top: 31px;
 }
 
-/* Modal */
+.computer-icon {
+  padding-right: 0px;
+  padding-left: 65px;
+}
+.computer-icon img {
+  margin-top: 36.63px;
+  margin-right: 73.97px;
+}
 
 .modal-content {
   margin: auto;
@@ -124,113 +107,9 @@ button {
   background-image: url(/img/background-modal.svg);
 }
 
-.modal-header {
-  border: none;
-}
-
-#modal-title {
-  font-family: "Onest-Bold";
-  font-size: 34px;
-  font-weight: 900;
-  line-height: 44.2px;
-  color: #136ef6;
-  margin-left: 55px;
-  margin-bottom: 15px;
-}
-
-.left-block {
-  margin: 0px;
-  padding: 0px;
-}
-
-.right-block {
-  margin-top: 18px;
-  padding-left: 34px;
-  padding-right: 18px;
-}
-
-.asterisk-text {
-  font-family: "Onest Regular";
-  font-size: 12px;
-  font-weight: 300;
-  line-height: 15.6px;
-  margin-left: 55px;
-}
-
-.legal-text {
-  font-family: "Onest Regular";
-  font-size: 10px;
-  font-weight: 400;
-  line-height: 13px;
-}
-
-#text-get-gifts {
-  font-family: "Onest Regular";
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 23.4px;
-  margin-left: 55px;
-}
-
-.modal-point-text {
-  font-family: "Onest Regular";
-  font-size: 15px;
-  font-weight: 600;
-  line-height: 19.5px;
-}
-
-.gifts-texts {
-  font-family: "Onest Regular";
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 19.5px;
-  margin-bottom: 10px;
-}
-
-#last-item {
-  margin-bottom: 15px;
-}
-
-.icon-col {
-  margin-left: 66px;
-}
-
-.form-col {
-  margin-bottom: 10px;
-  margin-left: 0px;
-  padding: 0px;
-}
-
 #modalbtn {
   font-size: 18px;
   line-height: 23.4px;
-  color: white;
-  border: none;
-  font-family: "Onest-Bold";
-  font-weight: 700;
-  background: #136ef6;
-  border-radius: 5px;
   height: 44px;
   margin-bottom: 7px;
-}
-
-a {
-  color: #212529;
-}
-
-#modal-arrow {
-  margin-top: 200px;
-}
-
-input,
-select {
-  height: 50px;
-  margin-bottom: 10px;
-}
-
-.form-control,
-.form-select {
-  border-width: 0.5px;
-  border-color: #136ef6;
-  border-style: solid;
-}
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,35 @@
+// General styles
+
+@font-face {
+  font-family: "Onest Bold";
+  src: url(/fonts/OnestBold1602-hint.woff) format("woff");
+  font-family: "Onest Medium";
+  src: url(/fonts/OnestMedium1602-hint.ttf) format("ttf");
+  font-family: "Onest Light";
+  src: url(/fonts/OnestLight1602-hint.ttf) format("ttf");
+  font-family: "Onest Regular";
+  src: url(/fonts/OnestRegular1602-hint.ttf) format("ttf");
+}
+
+$emphasis-color: #136ef6;
+$bold-font: "Onest Bold";
+$normal-font: "Onest Medium";
+$light-font: "Onest Light";
+$regular-font: "Onest Regular";
+
+%button-style {
+  color: white;
+  border: none;
+  font-family: $normal-font;
+  font-weight: 700;
+  background: $emphasis-color;
+  border-radius: 5px;
+}
+
+body {
+  width: 1440px;
+  margin: auto;
+}
+
+@import "banner";
+@import "modal";
