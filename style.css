@@ -8,7 +8,8 @@
   font-family: "Onest Regular";
   src: url(/fonts/OnestRegular1602-hint.ttf) format("ttf");
 }
-#modalbtn, .btn-col button {
+.modal-input-block .modalbtn,
+.btn-col button {
   color: white;
   border: none;
   font-family: "Onest Medium";
@@ -107,9 +108,90 @@ body {
   background-image: url(/img/background-modal.svg);
 }
 
-#modalbtn {
+.modal-header {
+  border: none;
+}
+
+.modal-left-block {
+  margin: 0px;
+  padding: 0px;
+}
+.modal-left-block .modal-title {
+  font-family: "Onest Medium";
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 44.2px;
+  color: #136ef6;
+  margin-left: 55px;
+  margin-bottom: 15px;
+}
+.modal-left-block .text-get-gifts {
+  font-family: "Onest Medium";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 23.4px;
+  margin-left: 55px;
+}
+.modal-left-block .gifts-texts {
+  font-family: "Onest Regular";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 19.5px;
+  margin-bottom: 10px;
+}
+.modal-left-block #last-item {
+  margin-bottom: 15px;
+}
+.modal-left-block .modal-point-text {
+  font-family: "Onest Medium";
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 19.5px;
+}
+.modal-left-block .asterisk-text {
+  font-family: "Onest Light";
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 15.6px;
+  margin-left: 55px;
+}
+
+.icon-col {
+  margin-left: 66px;
+}
+
+.modal-input-block {
+  margin-top: 18px;
+  padding-left: 34px;
+  padding-right: 18px;
+}
+.modal-input-block .form-control,
+.modal-input-block .form-select {
+  border-width: 0.5px;
+  border-color: #136ef6;
+  border-style: solid;
+}
+.modal-input-block input,
+.modal-input-block select {
+  height: 50px;
+  margin-bottom: 10px;
+}
+.modal-input-block .modalbtn {
   font-size: 18px;
   line-height: 23.4px;
   height: 44px;
   margin-bottom: 7px;
-}/*# sourceMappingURL=style.css.map */
+}
+.modal-input-block .legal-text {
+  font-family: "Onest Regular";
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 13px;
+}
+.modal-input-block a {
+  color: #212529;
+}
+
+#modal-arrow {
+  margin-top: 200px;
+} /*# sourceMappingURL=style.css.map */

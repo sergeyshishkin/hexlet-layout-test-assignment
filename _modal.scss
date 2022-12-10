@@ -5,11 +5,104 @@
   background-image: url(/img/background-modal.svg);
 }
 
-#modalbtn {
-  font-size: 18px;
-  line-height: 23.4px;
-  height: 44px;
-  margin-bottom: 7px;
+.modal-header {
+  border: none;
+}
 
-  @extend %button-style;
+.modal-left-block {
+  margin: 0px;
+  padding: 0px;
+
+  .modal-title {
+    font-family: $normal-font;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 44.2px;
+    color: $emphasis-color;
+    margin-left: 55px;
+    margin-bottom: 15px;
+  }
+
+  .text-get-gifts {
+    font-family: $normal-font;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 23.4px;
+    margin-left: 55px;
+  }
+
+  .gifts-texts {
+    font-family: $regular-font;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 19.5px;
+    margin-bottom: 10px;
+  }
+
+  #last-item {
+    margin-bottom: 15px;
+  }
+
+  .modal-point-text {
+    font-family: $normal-font;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 19.5px;
+  }
+
+  .asterisk-text {
+    font-family: $light-font;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 15.6px;
+    margin-left: 55px;
+  }
+}
+
+// DOES IT STILL NEED ?
+.icon-col {
+  margin-left: 66px;
+}
+
+.modal-input-block {
+  margin-top: 18px;
+  padding-left: 34px;
+  padding-right: 18px;
+
+  .form-control,
+  .form-select {
+    border-width: 0.5px;
+    border-color: $emphasis-color;
+    border-style: solid;
+  }
+
+  input,
+  select {
+    height: 50px;
+    margin-bottom: 10px;
+  }
+
+  .modalbtn {
+    font-size: 18px;
+    line-height: 23.4px;
+    height: 44px;
+    margin-bottom: 7px;
+
+    @extend %button-style;
+  }
+
+  .legal-text {
+    font-family: $regular-font;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 13px;
+  }
+
+  a {
+    color: #212529;
+  }
+}
+
+#modal-arrow {
+  margin-top: 200px;
 }
