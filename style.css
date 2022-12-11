@@ -22,7 +22,7 @@ body {
 
 .banner {
   height: 90px;
-  background-image: url(/img/background.svg);
+  background-image: url(./img/background.svg);
 }
 
 .normal-text {
@@ -102,7 +102,7 @@ body {
   margin: auto;
   width: 930px;
   height: 440px;
-  background-image: url(/img/background-modal.svg);
+  background-image: url(./img/background-modal.svg);
 }
 
 .modal-header {
