@@ -53,7 +53,7 @@
               </div>
 
               <div class="row">
-                <div class="col-1 icon-col">
+                <div class="col-1 icon-col icon-revenue">
                   <img src="/img/revenue 1 1.svg" alt="" />
                 </div>
                 <div class="col">
@@ -68,7 +68,7 @@
                 </div>
               </div>
               <div class="row">
-                <div class="col-1 icon-col">
+                <div class="col-1 icon-col icon-chat">
                   <img src="/img/online-chat 1.svg" alt="" />
                 </div>
                 <div class="col">
@@ -82,11 +82,11 @@
                 </div>
               </div>
               <div class="row">
-                <div class="col-1 icon-col">
+                <div class="col-1 icon-col icon-notes">
                   <img src="/img/notes 1.svg" alt="" />
                 </div>
                 <div class="col">
-                  <p class="gifts-texts" id="last-item">
+                  <p class="gifts-texts">
                     <span class="modal-point-text"
                       >Возможность заморозить обучение на 2 месяца.</span
                     ><br />
@@ -114,6 +114,7 @@
                 class="form-control"
                 id="input-name"
                 placeholder="Имя"
+                required
               />
 
               <div class="form-floating">
@@ -127,8 +128,8 @@
                 placeholder="Номер телефона"
               />
 
-              <select class="form-select" id="input-faculty" placeholder="!!!!">
-                <option selected="Chrome" id="faculty-placeholder">
+              <select class="form-select" id="input-faculty">
+                <option value="" disabled selected hidden>
                   Хочу на факультет
                 </option>
                 <option value="Chrome">Chrome</option>

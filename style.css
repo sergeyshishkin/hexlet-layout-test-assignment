@@ -1,6 +1,4 @@
 @font-face {
-  font-family: "Onest Bold";
-  src: url(/fonts/OnestBold1602-hint.woff) format("woff");
   font-family: "Onest Medium";
   src: url(/fonts/OnestMedium1602-hint.ttf) format("ttf");
   font-family: "Onest Light";
@@ -8,8 +6,7 @@
   font-family: "Onest Regular";
   src: url(/fonts/OnestRegular1602-hint.ttf) format("ttf");
 }
-.modal-input-block .modalbtn,
-.btn-col button {
+.modal-input-block .modalbtn, .btn-col button {
   color: white;
   border: none;
   font-family: "Onest Medium";
@@ -132,32 +129,42 @@ body {
   line-height: 23.4px;
   margin-left: 55px;
 }
-.modal-left-block .gifts-texts {
+.modal-left-block .icon-col {
+  padding: 0px;
+  margin-right: 8px;
+}
+.modal-left-block .icon-revenue {
+  margin-left: 60px;
+}
+.modal-left-block .icon-chat {
+  margin-left: 56px;
+}
+.modal-left-block .icon-notes {
+  margin-left: 60px;
+}
+
+.gifts-texts {
   font-family: "Onest Regular";
   font-size: 15px;
   font-weight: 400;
   line-height: 19.5px;
   margin-bottom: 10px;
 }
-.modal-left-block #last-item {
-  margin-bottom: 15px;
-}
-.modal-left-block .modal-point-text {
+
+.modal-point-text {
   font-family: "Onest Medium";
   font-size: 15px;
   font-weight: 500;
   line-height: 19.5px;
 }
-.modal-left-block .asterisk-text {
+
+.asterisk-text {
   font-family: "Onest Light";
   font-size: 12px;
   font-weight: 300;
   line-height: 15.6px;
+  margin-top: 5px;
   margin-left: 55px;
-}
-
-.icon-col {
-  margin-left: 66px;
 }
 
 .modal-input-block {
@@ -165,22 +172,40 @@ body {
   padding-left: 34px;
   padding-right: 18px;
 }
-.modal-input-block .form-control,
-.modal-input-block .form-select {
+.modal-input-block input {
+  height: 50px;
+  margin-bottom: 10px;
   border-width: 0.5px;
   border-color: #136ef6;
   border-style: solid;
 }
-.modal-input-block input,
 .modal-input-block select {
+  width: 257px;
+  border-radius: 5px;
   height: 50px;
   margin-bottom: 10px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-width: 0.5px;
+  border-color: #136ef6;
+  border-style: solid;
+  background-image: url(/img/dropdown-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: calc(100% - 23px) center;
+}
+.modal-input-block select option[value=""] {
+  color: #9e9e9e;
+}
+.modal-input-block #default-select-option {
+  color: #9e9e9e;
+  font-weight: 900;
 }
 .modal-input-block .modalbtn {
-  font-size: 18px;
   line-height: 23.4px;
   height: 44px;
   margin-bottom: 7px;
+  margin-top: 12px;
 }
 .modal-input-block .legal-text {
   font-family: "Onest Regular";
@@ -194,4 +219,4 @@ body {
 
 #modal-arrow {
   margin-top: 200px;
-} /*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
