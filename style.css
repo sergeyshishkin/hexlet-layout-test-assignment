@@ -190,7 +190,7 @@ body {
   border-width: 0.5px;
   border-color: #136ef6;
   border-style: solid;
-  background-image: url(/img/dropdown-arrow.svg);
+  background-image: url(./img/dropdown-arrow.svg);
   background-repeat: no-repeat;
   background-position: calc(100% - 23px) center;
 }
